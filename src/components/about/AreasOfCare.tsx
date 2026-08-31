@@ -6,13 +6,13 @@ import { motion, useInView } from 'framer-motion';
 import { aboutData } from '@/data/about';
 
 const IMAGES = [
-  "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1629367355289-5f80b9bdc99f?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1596541223130-5d5660ee276a?q=80&w=800&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=800&auto=format&fit=crop",
+  "/images/area_panchakarma.jpg",
+  "/images/area_rejuvenation.jpg",
+  "/images/area_pain_management.jpg",
+  "/images/area_stress_relief.jpg",
+  "/images/area_womens_wellness.jpg",
+  "/images/area_lifestyle.jpg",
+  "/images/area_preventive.jpg",
 ];
 
 export function AreasOfCare() {
