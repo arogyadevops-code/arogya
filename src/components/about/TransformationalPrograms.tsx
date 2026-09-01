@@ -2,10 +2,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { programsData } from '@/data/programs';
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -15,14 +15,14 @@ const containerVariants = {
   }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
 };
 
 export function TransformationalPrograms() {
   return (
-    <section className="py-24 lg:py-32 bg-white text-text-dark relative z-20 shadow-2xl rounded-b-[4rem] -mt-8">
+    <section className="py-24 lg:py-32 bg-transparent text-text-dark relative z-20 -mt-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <motion.div 

@@ -83,7 +83,7 @@ export function Treatments() {
                     </h3>
                     
                     <p className="text-base text-text-muted font-light leading-relaxed mb-6">
-                      {treatment.shortDescription}
+                      {treatment.description}
                     </p>
 
                     <Link 
