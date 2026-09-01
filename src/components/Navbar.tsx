@@ -20,19 +20,19 @@ export function Navbar() {
     <nav 
       className={`fixed left-0 right-0 z-50 transition-all duration-700 mx-auto ${
         scrolled 
-          ? 'top-4 max-w-6xl bg-white/90 backdrop-blur-xl border border-gold/10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] rounded-full py-2 px-4' 
-          : 'top-0 w-full bg-transparent border-b border-transparent py-6 px-4'
+          ? 'top-0 lg:top-4 max-w-6xl bg-white/95 backdrop-blur-xl border-b lg:border border-gold/10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] lg:rounded-full py-3 lg:py-2 px-4' 
+          : 'top-0 w-full bg-transparent border-b border-transparent py-4 lg:py-6 px-4'
       } text-text-dark`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 transition-all duration-700">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-14 lg:h-16 transition-all duration-700">
           
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
-            <div className="w-10 h-10 rounded-full border border-gold/30 bg-gold/5 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-all duration-700 shadow-sm group-hover:shadow-md group-hover:scale-105">
-              <span className="font-serif text-xl">A</span>
+            <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-gold/30 bg-gold/5 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-all duration-700 shadow-sm group-hover:shadow-md group-hover:scale-105">
+              <span className="font-serif text-lg lg:text-xl">A</span>
             </div>
-            <span className="font-serif text-2xl tracking-[0.2em] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-forest-dark to-forest-primary">
+            <span className="font-serif text-xl lg:text-2xl tracking-[0.2em] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-forest-dark to-forest-primary">
               AROGYA
             </span>
           </div>
@@ -67,8 +67,8 @@ export function Navbar() {
 
           {/* Mobile menu button */}
           <div className="lg:hidden flex items-center text-forest-dark">
-            <button onClick={() => setIsOpen(!isOpen)} className="p-2 transition-colors duration-300">
-              {isOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
+            <button onClick={() => setIsOpen(!isOpen)} className="p-2 bg-forest-soft/30 rounded-full transition-colors duration-300">
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
@@ -76,12 +76,12 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       <div 
-        className={`lg:hidden fixed inset-0 top-[72px] bg-ivory transition-all duration-500 transform ${
+        className={`lg:hidden fixed inset-0 top-0 pt-24 bg-ivory/95 backdrop-blur-lg transition-all duration-500 transform ${
           isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
-        } z-40`}
+        } -z-10`}
       >
-        <div className="flex flex-col h-full px-8 pt-10 pb-16 overflow-y-auto">
-          <div className="flex flex-col space-y-8">
+        <div className="flex flex-col h-full px-8 pb-16 overflow-y-auto">
+          <div className="flex flex-col space-y-8 mt-4 text-center">
             <Link href="/" onClick={() => setIsOpen(false)} className="text-2xl font-serif text-forest-dark hover:text-gold transition-colors">Home</Link>
             <Link href="/about" onClick={() => setIsOpen(false)} className="text-2xl font-serif text-forest-dark hover:text-gold transition-colors">About</Link>
             <Link href="/treatments" onClick={() => setIsOpen(false)} className="text-2xl font-serif text-forest-dark hover:text-gold transition-colors">Treatments</Link>
@@ -90,10 +90,10 @@ export function Navbar() {
           </div>
           
           <div className="mt-auto pt-10 flex flex-col gap-4">
-            <Button variant="primary" className="w-full bg-forest-dark text-white hover:bg-forest-primary py-4 text-sm font-medium tracking-wide rounded-md">
+            <Button variant="primary" className="w-full rounded-full bg-forest-dark text-white hover:bg-forest-primary py-4 text-sm font-medium tracking-wide">
               Book Appointment
             </Button>
-            <Button variant="outline" className="w-full py-4 text-sm font-medium tracking-wide border-forest-dark text-forest-dark hover:bg-forest-dark hover:text-white rounded-md">
+            <Button variant="outline" className="w-full rounded-full py-4 text-sm font-medium tracking-wide border-forest-dark text-forest-dark hover:bg-forest-dark hover:text-white">
               WhatsApp Us
             </Button>
           </div>
