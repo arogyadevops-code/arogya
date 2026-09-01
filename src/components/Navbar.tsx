@@ -18,54 +18,51 @@ export function Navbar() {
 
   return (
     <nav 
-      className={`fixed w-full z-50 transition-all duration-500 border-b ${
+      className={`fixed left-0 right-0 z-50 transition-all duration-700 mx-auto ${
         scrolled 
-          ? 'bg-white/95 backdrop-blur-md border-border shadow-sm py-2' 
-          : 'bg-white border-transparent py-4'
+          ? 'top-4 max-w-6xl bg-white/90 backdrop-blur-xl border border-gold/10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] rounded-full py-2 px-4' 
+          : 'top-0 w-full bg-transparent border-b border-transparent py-6 px-4'
       } text-text-dark`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20 transition-all duration-500">
-          {/* Logo Placeholder */}
-          <div className="flex-shrink-0 font-serif text-3xl tracking-widest font-semibold flex items-center gap-2 cursor-pointer group text-forest-dark">
-            <div className="w-8 h-8 rounded-full border border-forest-dark flex items-center justify-center text-forest-dark group-hover:bg-forest-dark group-hover:text-white transition-all duration-500">
-              <span className="font-serif text-sm">A</span>
+        <div className="flex justify-between items-center h-16 transition-all duration-700">
+          
+          {/* Logo */}
+          <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
+            <div className="w-10 h-10 rounded-full border border-gold/30 bg-gold/5 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-all duration-700 shadow-sm group-hover:shadow-md group-hover:scale-105">
+              <span className="font-serif text-xl">A</span>
             </div>
-            AROGYA
+            <span className="font-serif text-2xl tracking-[0.2em] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-forest-dark to-forest-primary">
+              AROGYA
+            </span>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-8 text-xs font-sans tracking-[0.15em] uppercase font-semibold text-text-dark">
-            <Link href="/" className="relative group hover:text-gold transition-colors duration-300">
-              Home
-              <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/about" className="relative group hover:text-gold transition-colors duration-300">
-              About
-              <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/treatments" className="relative group hover:text-gold transition-colors duration-300">
-              Treatments
-              <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/care-plans" className="relative group hover:text-gold transition-colors duration-300">
-              Care Plans
-              <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/contact" className="relative group hover:text-gold transition-colors duration-300">
-              Contact
-              <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-full"></span>
-            </Link>
+          <div className="hidden lg:flex items-center space-x-10 text-xs font-sans tracking-[0.15em] uppercase font-semibold text-text-muted">
+            {['Home', 'About', 'Treatments', 'Care Plans', 'Contact'].map((item) => (
+              <Link 
+                key={item}
+                href={item === 'Home' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`} 
+                className="relative group overflow-hidden px-1 py-2"
+              >
+                <span className="group-hover:text-forest-dark transition-colors duration-500">{item}</span>
+                <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold transform -translate-x-[101%] group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>
+              </Link>
+            ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="primary" size="sm" className="bg-forest-dark text-white hover:bg-forest-primary border-none font-medium tracking-wide text-xs px-6 py-2.5 rounded-md">
-              Book Appointment
-            </Button>
-            <div className="p-2.5 rounded-md bg-forest-soft text-forest-dark hover:bg-gold hover:text-white cursor-pointer transition-all duration-300">
+            <div className="p-2.5 rounded-full border border-forest-dark/10 text-forest-dark hover:border-gold hover:text-gold cursor-pointer transition-all duration-500 bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-md hover:-translate-y-0.5">
               <Phone className="w-4 h-4" />
             </div>
+            <Button 
+              variant="primary" 
+              className="group relative overflow-hidden bg-forest-dark text-white border-none font-medium tracking-[0.1em] text-[11px] uppercase px-8 py-3.5 rounded-full shadow-md hover:shadow-xl transition-all duration-500 hover:-translate-y-0.5"
+            >
+              <span className="relative z-10 flex items-center gap-2 group-hover:text-gold transition-colors duration-500">Book Appointment</span>
+              <div className="absolute inset-0 h-full w-full bg-forest-primary transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out z-0"></div>
+            </Button>
           </div>
 
           {/* Mobile menu button */}
