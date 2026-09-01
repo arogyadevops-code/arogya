@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react';
 
 export function CarePlanGrid() {
   return (
-    <section className="py-24 bg-ivory text-text-dark relative z-10 overflow-hidden">
+    <section className="py-24 bg-transparent text-text-dark relative z-10 overflow-hidden">
       
       {/* Background Decor */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
@@ -42,7 +42,7 @@ export function CarePlanGrid() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group bg-white rounded-3xl overflow-hidden border border-forest-primary/5 shadow-xl shadow-forest-dark/5 hover:shadow-2xl hover:shadow-forest-primary/10 transition-all duration-500 flex flex-col h-full relative cursor-pointer"
+              className="group bg-white/80 backdrop-blur-md rounded-3xl overflow-hidden border border-forest-primary/10 shadow-xl shadow-forest-dark/5 hover:shadow-2xl hover:shadow-forest-primary/10 transition-all duration-500 flex flex-col h-full relative cursor-pointer"
             >
               
               {/* Image Section */}
@@ -64,7 +64,7 @@ export function CarePlanGrid() {
               </div>
 
               {/* Content Section */}
-              <div className="p-8 flex flex-col flex-grow bg-white relative">
+              <div className="p-8 flex flex-col flex-grow bg-transparent relative">
                 
                 <h3 className="text-2xl font-serif text-forest-primary mb-4 group-hover:text-gold transition-colors duration-300">
                   {plan.title}
