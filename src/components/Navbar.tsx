@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, Menu, X } from 'lucide-react';
 import { Button } from './ui/Button';
 
@@ -28,14 +29,15 @@ export function Navbar() {
         <div className="flex justify-between items-center h-14 lg:h-16 transition-all duration-700">
           
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
-            <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border border-gold/30 bg-gold/5 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-white transition-all duration-700 shadow-sm group-hover:shadow-md group-hover:scale-105">
-              <span className="font-serif text-lg lg:text-xl">A</span>
-            </div>
-            <span className="font-serif text-xl lg:text-2xl tracking-[0.2em] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-forest-dark to-forest-primary">
-              AROGYA
-            </span>
-          </div>
+          <Link href="/" className="flex-shrink-0 cursor-pointer relative w-48 h-12 lg:w-64 lg:h-14">
+            <Image 
+              src="/images/nav-logo.png"
+              alt="Arogya Ayurveda Logo"
+              fill
+              className="object-contain object-left"
+              priority
+            />
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-10 text-xs font-sans tracking-[0.15em] uppercase font-semibold text-text-muted">
