@@ -16,7 +16,7 @@ export function AboutHero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-[90vh] flex items-center pt-20 lg:pt-0 overflow-hidden bg-ivory text-text-dark rounded-b-[4rem] z-20">
+    <section ref={ref} className="relative min-h-[90vh] flex items-center pt-32 lg:pt-40 pb-16 overflow-hidden bg-transparent text-text-dark z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
@@ -45,7 +45,7 @@ export function AboutHero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-            className="relative h-[60vh] lg:h-[80vh] w-full rounded-t-[4rem] rounded-bl-[4rem] overflow-hidden shadow-2xl"
+            className="relative h-[50vh] lg:h-[65vh] w-full rounded-2xl lg:rounded-[3rem] overflow-hidden shadow-2xl"
           >
             <motion.div style={{ y: yBackground, height: "120%" }} className="absolute -top-[10%] -bottom-[10%] w-full">
               <Image 

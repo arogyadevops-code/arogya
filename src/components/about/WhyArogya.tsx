@@ -70,14 +70,6 @@ export function WhyArogya() {
   return (
     <section className="py-24 lg:py-32 bg-transparent text-text-dark relative z-10 overflow-hidden">
       
-      {/* Background Decorators */}
-      <div className="absolute top-[10%] -left-32 w-[500px] h-[500px] z-0 pointer-events-none opacity-20 mix-blend-multiply origin-left">
-        <Image src="/branch_left.jpg" alt="Botanical leaf left" fill className="object-contain" sizes="500px" quality={100} />
-      </div>
-      <div className="absolute bottom-[0%] -right-20 w-[600px] h-[600px] z-0 pointer-events-none opacity-20 mix-blend-multiply origin-right">
-        <Image src="/branch_right.jpg" alt="Botanical leaf right" fill className="object-contain" sizes="600px" quality={100} />
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <motion.div 

@@ -11,9 +11,7 @@ const fadeInVariant: Variants = {
 
 export function GuidingPrinciples() {
   return (
-    <section className="py-24 lg:py-32 bg-ivory text-text-dark relative z-20 overflow-hidden border-t border-border">
-      <BotanicalDecoration variant="leaf2" className="top-1/4 -left-20 w-[600px] h-[600px] opacity-[0.03]" />
-      <BotanicalDecoration variant="branch" className="bottom-0 -right-10 w-[400px] h-[400px] opacity-[0.03]" />
+    <section className="py-24 lg:py-32 bg-transparent text-text-dark relative z-20 overflow-hidden border-t border-border">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

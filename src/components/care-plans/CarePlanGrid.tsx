@@ -34,51 +34,60 @@ export function CarePlanGrid() {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-          {carePlans.map((plan, index) => (
-            <motion.div
-              key={plan.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group bg-white/80 backdrop-blur-md rounded-3xl overflow-hidden border border-forest-primary/10 shadow-xl shadow-forest-dark/5 hover:shadow-2xl hover:shadow-forest-primary/10 transition-all duration-500 flex flex-col h-full relative cursor-pointer"
-            >
-              
-              {/* Image Section */}
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src={plan.image}
-                  alt={plan.title}
-                  fill
-                  className="object-cover transition-transform duration-1000 group-hover:scale-110"
-                />
+        <div className="space-y-16 lg:space-y-24 mt-16">
+          {carePlans.map((plan, index) => {
+            const isEven = index % 2 === 1;
+            return (
+              <motion.div
+                key={plan.id}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className={`flex flex-col ${isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-10 lg:gap-16 group`}
+              >
                 
-                {/* Overlay that appears on hover */}
-                <div className="absolute inset-0 bg-forest-dark/0 group-hover:bg-forest-dark/40 transition-colors duration-500 flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <div className="transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 flex items-center gap-2 text-ivory font-medium tracking-wide">
-                    <span>Learn More</span>
-                    <ArrowRight className="w-5 h-5" />
+                {/* Image Section */}
+                <div className="w-full lg:w-1/2 relative h-[350px] lg:h-[450px] rounded-3xl overflow-hidden shadow-2xl">
+                  <Image
+                    src={plan.image}
+                    alt={plan.title}
+                    fill
+                    className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
+                  {/* Elegant Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-forest-dark/80 via-transparent to-transparent opacity-60 mix-blend-multiply" />
+                  
+                  {/* Floating Action Button */}
+                  <div className="absolute bottom-6 right-6 bg-white/20 backdrop-blur-md border border-white/30 rounded-full p-4 text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 shadow-xl">
+                    <ArrowRight className="w-6 h-6" />
                   </div>
                 </div>
-              </div>
 
-              {/* Content Section */}
-              <div className="p-8 flex flex-col flex-grow bg-transparent relative">
-                
-                <h3 className="text-2xl font-serif text-forest-primary mb-4 group-hover:text-gold transition-colors duration-300">
-                  {plan.title}
-                </h3>
-                
-                <p className="text-text-muted font-light leading-relaxed mb-6 flex-grow">
-                  {plan.description}
-                </p>
+                {/* Content Section */}
+                <div className={`w-full lg:w-1/2 flex flex-col justify-center ${isEven ? 'lg:pr-10' : 'lg:pl-10'}`}>
+                  
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="text-4xl font-serif text-forest-primary/20 font-light">{(index + 1).toString().padStart(2, '0')}</span>
+                    <div className="w-12 h-px bg-gold/50" />
+                  </div>
+                  
+                  <h3 className="text-3xl lg:text-4xl font-serif text-forest-dark mb-6 group-hover:text-gold transition-colors duration-500 leading-tight">
+                    {plan.title}
+                  </h3>
+                  
+                  <p className="text-lg text-text-muted font-light leading-relaxed mb-10 max-w-lg">
+                    {plan.description}
+                  </p>
 
-                <div className="w-12 h-px bg-gold/30 group-hover:w-full transition-all duration-500 ease-out mt-auto" />
-              </div>
-              
-            </motion.div>
-          ))}
+                  <div className="inline-flex items-center gap-3 text-forest-primary font-medium tracking-wide uppercase text-sm border-b border-gold/30 pb-2 w-max hover:border-gold hover:text-gold transition-colors duration-300 cursor-pointer">
+                    <span>Explore Program</span>
+                  </div>
+                </div>
+                
+              </motion.div>
+            );
+          })}
         </div>
 
       </div>

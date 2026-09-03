@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Button } from '../ui/Button';
 import { BotanicalDecoration } from '../ui/BotanicalDecoration';
 
@@ -20,12 +21,11 @@ export function TreatmentsCTA() {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button variant="primary" className="bg-forest-dark text-white hover:bg-forest-primary w-full sm:w-auto text-lg px-10 py-5" withArrow>
-            Book a Consultation
-          </Button>
-          <Button variant="outline" className="border-forest-dark text-forest-dark hover:bg-forest-dark hover:text-white w-full sm:w-auto text-lg px-10 py-5">
-            View Pricing
-          </Button>
+          <Link href="/contact" className="w-full sm:w-auto">
+            <Button variant="primary" className="bg-forest-dark text-white hover:bg-forest-primary w-full text-lg px-10 py-5" withArrow>
+              Book a Consultation
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

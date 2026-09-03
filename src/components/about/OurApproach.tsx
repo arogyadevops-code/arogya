@@ -9,11 +9,6 @@ export function OurApproach() {
   return (
     <section id="approach" className="py-24 lg:py-32 bg-transparent text-text-dark relative z-20 overflow-hidden">
       
-      {/* Realistic Botanical Decoration on the right */}
-      <div className="absolute top-[20%] -right-32 w-[600px] h-[600px] z-0 pointer-events-none opacity-40 mix-blend-multiply origin-right hidden lg:block">
-        <Image src="/branch_right.jpg" alt="Botanical leaf right" fill className="object-contain" sizes="600px" quality={100} />
-      </div>
-      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
@@ -58,7 +53,7 @@ export function OurApproach() {
           >
             <div className="relative h-[400px] lg:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
               <Image 
-                src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?q=80&w=1200&auto=format&fit=crop"
+                src="/images/our_approach.jpg"
                 alt="Ayurvedic Treatment Approach"
                 fill
                 className="object-cover"

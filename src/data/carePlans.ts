@@ -10,49 +10,49 @@ export const carePlans: CarePlan[] = [
     id: "relax-rejuvenate",
     title: "Relax & Rejuvenate Program",
     description: "A calming, full-body reset combining classical Abhyangam, steam and therapeutic massage to release tension and restore energy.",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop"
+    image: "/images/care-plans/cp_relax.jpg"
   },
   {
     id: "sports-recovery",
     title: "Sports Recovery & Rehabilitation",
     description: "Targeted therapies for athletes and active individuals to speed recovery from strain, injury and joint overuse.",
-    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop"
+    image: "/images/care-plans/cp_sports.jpg"
   },
   {
     id: "natural-beauty",
     title: "Natural Beauty & Skin Rejuvenation",
     description: "Herbal facials, Mukha Lepam and cleansing therapies for natural radiance from within, free of synthetic products.",
-    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800&auto=format&fit=crop"
+    image: "/images/care-plans/cp_beauty.jpg"
   },
   {
     id: "spine-health",
     title: "Spine Health & Posture Care",
     description: "Kati and Greeva Vasti-led therapies to relieve spinal stiffness and correct long-term postural imbalance.",
-    image: "https://images.unsplash.com/photo-1588286840104-8957b019727f?q=80&w=800&auto=format&fit=crop"
+    image: "/images/care-plans/cp_spine.jpg"
   },
   {
     id: "stroke-recovery",
     title: "Stroke Recovery & Neuro Rehabilitation",
     description: "Structured Ayurvedic rehabilitation to support motor function, circulation and recovery after a neurological event.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173ff9e5fe3?q=80&w=800&auto=format&fit=crop"
+    image: "/images/care-plans/cp_stroke.jpg"
   },
   {
     id: "migraine-relief",
     title: "Migraine Relief Program",
     description: "Shirodhara and Nasyam-based protocols to calm the nervous system and reduce migraine frequency and intensity.",
-    image: "https://images.unsplash.com/photo-1507120410856-1f35574c3b45?q=80&w=800&auto=format&fit=crop"
+    image: "/images/care-plans/cp_migraine.jpg"
   },
   {
     id: "comprehensive-pain",
     title: "Comprehensive Pain Relief Program",
     description: "Multi-modal approach combining herbal poultices and specialized massages for chronic joint and muscle pain.",
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop"
+    image: "/images/care-plans/cp_pain.jpg"
   },
   {
     id: "lifestyle-disease",
     title: "Lifestyle Disease Management",
     description: "Holistic interventions through diet, yoga, and natural therapies to manage conditions like diabetes and hypertension.",
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop"
+    image: "/images/care-plans/cp_lifestyle.jpg"
   },
   {
     id: "digestive-wellness",
