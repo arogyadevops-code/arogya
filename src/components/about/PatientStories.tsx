@@ -43,7 +43,7 @@ export function PatientStories() {
                     : 'opacity-0 translate-x-full pointer-events-none'
               }`}
             >
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif text-forest-primary leading-relaxed md:leading-normal mb-12 max-w-4xl mx-auto">
+              <h3 className="text-2xl md:text-3xl font-serif text-forest-dark leading-relaxed md:leading-normal mb-12 max-w-3xl mx-auto">
                 "{testimonial.quote}"
               </h3>
               
@@ -53,51 +53,34 @@ export function PatientStories() {
                     <Star key={i} className="w-5 h-5 text-gold fill-gold" />
                   ))}
                 </div>
-                <p className="text-xl font-medium tracking-wide text-forest-primary">
-                  {testimonial.name}
-                </p>
-                <p className="text-text-muted text-sm tracking-widest uppercase">
-                  {testimonial.location}
-                </p>
+                
+                {/* Name and Arrows Container */}
+                <div className="flex items-center gap-6 mt-2">
+                  <button 
+                    onClick={prev}
+                    className="w-10 h-10 rounded-full border border-forest-primary/20 text-forest-primary flex items-center justify-center hover:bg-gold hover:border-gold hover:text-white transition-all duration-300 pointer-events-auto cursor-pointer"
+                    aria-label="Previous testimonial"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  
+                  <p className="text-xl font-medium tracking-wide text-forest-primary min-w-[150px]">
+                    {testimonial.name}
+                  </p>
+                  
+                  <button 
+                    onClick={next}
+                    className="w-10 h-10 rounded-full border border-forest-primary/20 text-forest-primary flex items-center justify-center hover:bg-gold hover:border-gold hover:text-white transition-all duration-300 pointer-events-auto cursor-pointer"
+                    aria-label="Next testimonial"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+                </div>
               </div>
             </div>
           ))}
 
         </div>
-
-        {/* Controls */}
-        <div className="flex items-center justify-center gap-6 mt-16">
-          <button 
-            onClick={prev}
-            className="w-14 h-14 rounded-full border border-forest-primary/20 text-forest-primary flex items-center justify-center hover:bg-gold hover:border-gold hover:text-white transition-all duration-300"
-            aria-label="Previous testimonial"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          
-          {/* Dots */}
-          <div className="flex gap-3">
-            {testimonials.map((_, idx) => (
-              <button 
-                key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`transition-all duration-500 rounded-full ${
-                  currentIndex === idx ? 'w-8 h-2 bg-gold' : 'w-2 h-2 bg-forest-primary/20 hover:bg-forest-primary/50'
-                }`}
-                aria-label={`Go to testimonial ${idx + 1}`}
-              />
-            ))}
-          </div>
-
-          <button 
-            onClick={next}
-            className="w-14 h-14 rounded-full border border-forest-primary/20 text-forest-primary flex items-center justify-center hover:bg-gold hover:border-gold hover:text-white transition-all duration-300"
-            aria-label="Next testimonial"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
-        </div>
-
       </div>
     </section>
   );

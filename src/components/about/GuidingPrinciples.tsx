@@ -42,10 +42,9 @@ export function GuidingPrinciples() {
             className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start group border-b border-border pb-16 lg:pb-24"
           >
             <div className="w-full lg:w-1/3">
-              <span className="text-5xl md:text-6xl font-serif text-forest-soft block mb-4 group-hover:text-gold transition-colors duration-500 font-light">01</span>
-              <h3 className="text-2xl font-serif text-forest-dark uppercase tracking-widest">Our Mission</h3>
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-gold uppercase tracking-widest mb-4 drop-shadow-sm">Our Mission</h3>
             </div>
-            <div className="w-full lg:w-2/3 lg:pt-4">
+            <div className="w-full lg:w-2/3 lg:pt-2">
               <p className="text-xl md:text-2xl text-text-muted font-light leading-relaxed">
                 To empower individuals and families to live healthier, happier lives through <span className="text-forest-dark group-hover:text-forest-primary transition-colors duration-500 font-medium">authentic Ayurvedic healthcare</span>, personalized treatment plans, and natural solutions that address the root cause of illnesses rather than just the symptoms.
               </p>
@@ -61,10 +60,9 @@ export function GuidingPrinciples() {
             className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start group border-b border-border pb-16 lg:pb-24"
           >
             <div className="w-full lg:w-1/3">
-              <span className="text-5xl md:text-6xl font-serif text-forest-soft block mb-4 group-hover:text-gold transition-colors duration-500 font-light">02</span>
-              <h3 className="text-2xl font-serif text-forest-dark uppercase tracking-widest">Our Vision</h3>
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-gold uppercase tracking-widest mb-4 drop-shadow-sm">Our Vision</h3>
             </div>
-            <div className="w-full lg:w-2/3 lg:pt-4">
+            <div className="w-full lg:w-2/3 lg:pt-2">
               <p className="text-xl md:text-2xl text-text-muted font-light leading-relaxed">
                 To become one of the <span className="text-forest-dark group-hover:text-forest-primary transition-colors duration-500 font-medium">most trusted Ayurveda healthcare centers</span> in the UAE by delivering genuine care, promoting preventive healthcare, and inspiring communities to adopt a healthier lifestyle.
               </p>
@@ -80,10 +78,9 @@ export function GuidingPrinciples() {
             className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start group"
           >
             <div className="w-full lg:w-1/3">
-              <span className="text-5xl md:text-6xl font-serif text-forest-soft block mb-4 group-hover:text-gold transition-colors duration-500 font-light">03</span>
-              <h3 className="text-2xl font-serif text-forest-dark uppercase tracking-widest">Our Values</h3>
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-gold uppercase tracking-widest mb-4 drop-shadow-sm">Our Values</h3>
             </div>
-            <div className="w-full lg:w-2/3 lg:pt-4">
+            <div className="w-full lg:w-2/3 lg:pt-2">
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8">
                 {aboutData.principles.values.map((value, index) => (
                   <motion.li 

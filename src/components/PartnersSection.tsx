@@ -1,5 +1,18 @@
+"use client";
 import React from 'react';
-import Image from 'next/image';
+
+const partners = [
+  { name: "AXA", logo: "/images/partners/axa.png" },
+  { name: "Neuron", logo: "/images/partners/neuron.png" },
+  { name: "SAICO Insurance", logo: "/images/partners/saico.png" },
+  { name: "ADNIC", logo: "/images/partners/adnic.png" },
+  { name: "Cigna", logo: "/images/partners/cigna.png" },
+  { name: "Daman", logo: "/images/partners/daman.png" },
+  { name: "FMC", logo: "/images/partners/fmc.png" },
+  { name: "Mednet", logo: "/images/partners/mednet.jpg" },
+  { name: "MSH", logo: "/images/partners/msh.png" },
+  { name: "NAS", logo: "/images/partners/nas.jpg" }
+];
 
 export function PartnersSection() {
   return (
@@ -11,31 +24,47 @@ export function PartnersSection() {
       </div>
 
       {/* Infinite scrolling marquee */}
-      <div className="relative w-full overflow-hidden flex py-4">
+      <div className="relative w-full overflow-hidden flex py-8 bg-white/40 shadow-inner">
         {/* Fading edges for seamless look */}
         <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-cream to-transparent z-10 pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-cream to-transparent z-10 pointer-events-none"></div>
         
         <div className="flex w-max animate-marquee hover:pause-animation">
-          <div className="flex w-max items-center h-20 sm:h-24 pr-8">
-            <div className="relative w-[800px] h-full overflow-hidden mix-blend-multiply">
-              <Image 
-                src="/images/insurance-partners.png" 
-                alt="Insurance Partners" 
-                fill
-                className="object-cover object-bottom"
-              />
-            </div>
+          <div className="flex w-max items-center pr-12">
+            {partners.map((partner, index) => (
+              <div key={`p1-${index}`} className="mx-8 md:mx-12 w-32 md:w-40 flex justify-center items-center h-20 transition-all duration-300">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img 
+                  src={partner.logo} 
+                  alt={`${partner.name} logo`} 
+                  className="max-h-full max-w-full object-contain mix-blend-multiply"
+                  onError={(e) => {
+                    // Fallback to text if logo fails to load
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.parentElement!.innerText = partner.name;
+                    e.currentTarget.parentElement!.className = "mx-8 md:mx-12 flex items-center justify-center text-xl font-serif text-forest-primary/70 font-semibold uppercase tracking-widest whitespace-nowrap";
+                  }}
+                />
+              </div>
+            ))}
           </div>
-          <div className="flex w-max items-center h-20 sm:h-24 pr-8">
-            <div className="relative w-[800px] h-full overflow-hidden mix-blend-multiply">
-              <Image 
-                src="/images/insurance-partners.png" 
-                alt="Insurance Partners" 
-                fill
-                className="object-cover object-bottom"
-              />
-            </div>
+          <div className="flex w-max items-center pr-12">
+            {partners.map((partner, index) => (
+              <div key={`p2-${index}`} className="mx-8 md:mx-12 w-32 md:w-40 flex justify-center items-center h-20 transition-all duration-300">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img 
+                  src={partner.logo} 
+                  alt={`${partner.name} logo`} 
+                  className="max-h-full max-w-full object-contain mix-blend-multiply"
+                  onError={(e) => {
+                    // Fallback to text if logo fails to load
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.parentElement!.innerText = partner.name;
+                    e.currentTarget.parentElement!.className = "mx-8 md:mx-12 flex items-center justify-center text-xl font-serif text-forest-primary/70 font-semibold uppercase tracking-widest whitespace-nowrap";
+                  }}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

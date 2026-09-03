@@ -19,11 +19,7 @@ export function Navbar() {
 
   return (
     <nav 
-      className={`fixed left-0 right-0 z-50 transition-all duration-700 mx-auto ${
-        scrolled 
-          ? 'top-0 lg:top-4 max-w-6xl bg-white/95 backdrop-blur-xl border-b lg:border border-gold/10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] lg:rounded-full py-3 lg:py-2 px-4' 
-          : 'top-0 w-full bg-transparent border-b border-transparent py-4 lg:py-6 px-4'
-      } text-text-dark`}
+      className="fixed left-0 right-0 z-50 transition-all duration-700 mx-auto top-4 max-w-6xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] rounded-full py-2 px-4 text-text-dark bg-gradient-to-r from-forest-dark via-ivory to-cream"
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 lg:h-16 transition-all duration-700">
@@ -31,7 +27,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 cursor-pointer relative w-48 h-12 lg:w-64 lg:h-14">
             <Image 
-              src="/images/nav-logo.png"
+              src="/images/logonav.png"
               alt="Arogya Ayurveda Logo"
               fill
               className="object-contain object-left"

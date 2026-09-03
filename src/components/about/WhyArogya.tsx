@@ -106,7 +106,7 @@ export function WhyArogya() {
                 {feature.id}
               </div>
               
-              <h3 className="text-lg font-semibold text-forest-dark mb-4 group-hover:text-gold transition-colors duration-300">
+              <h3 className="text-xl font-bold text-forest-primary mb-4 group-hover:text-gold group-hover:-translate-y-1 group-hover:scale-105 transition-all duration-300 ease-out drop-shadow-sm">
                 {feature.title}
               </h3>
               

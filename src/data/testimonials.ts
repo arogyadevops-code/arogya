@@ -9,10 +9,23 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    quote: "The entire experience felt calm, professional and deeply personalized. It's truly helped me feel more balanced in my everyday life.",
+    quote: "I came here with severe back pain and felt a noticeable improvement after just a few sessions. The doctors and therapists were professional, caring, and highly knowledgeable. I highly recommend this clinic.",
     rating: 5,
-    name: "Sara M.",
-    location: "Abu Dhabi",
+    name: "Praveen Kumar",
+    location: "UAE",
   },
-  // Add more testimonials here when provided by the business
+  {
+    id: "2",
+    quote: "\"A calm environment, experienced therapists, and authentic Ayurvedic treatments made my healing journey truly comfortable. I noticed positive changes in my stress levels, sleep, and overall well-being.",
+    rating: 5,
+    name: "Aswathy",
+    location: "UAE",
+  },
+  {
+    id: "3",
+    quote: "From consultation to therapy, every step was handled with professionalism and compassion. I highly recommend Arogya Ayurveda Healthcare to anyone seeking safe, natural, and holistic healing.",
+    rating: 5,
+    name: "Renjith",
+    location: "UAE",
+  }
 ];
