@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${manrope.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans bg-ivory text-text-dark relative">
+      <body className="min-h-full flex flex-col font-sans bg-ivory text-text-dark relative overflow-x-hidden">
         {/* Global Leaf Backgrounds */}
         <div className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden">
           {/* subtle overall texture */}

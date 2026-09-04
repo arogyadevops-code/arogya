@@ -3,9 +3,30 @@ import React from 'react';
 import { Button } from '@/components/ui/Button';
 
 export default function ContactPage() {
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = React.useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = React.useState('');
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission logic here
+    setStatus('submitting');
+    setErrorMessage('');
+    
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name') as string;
+    const phone = formData.get('phone') as string;
+    
+    // Basic validation
+    if (!phone || phone.length < 8) {
+      setStatus('error');
+      setErrorMessage('Please enter a valid phone number.');
+      return;
+    }
+
+    // Mock API call
+    setTimeout(() => {
+      setStatus('success');
+      (e.target as HTMLFormElement).reset();
+    }, 1500);
   };
 
   return (
@@ -27,56 +48,80 @@ export default function ContactPage() {
             <h2 className="text-3xl font-serif text-forest-primary mb-2">Book an Appointment</h2>
             <p className="text-sm text-text-muted mb-8">Fields marked with an <span className="text-red-500">*</span> are required</p>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-semibold mb-2 text-forest-primary">Name</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name" 
-                  className="w-full px-4 py-3 rounded-xl border border-forest-primary/20 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"
-                  placeholder="Your full name"
-                />
+            {status === 'success' ? (
+              <div className="bg-forest-light text-forest-dark p-6 rounded-xl border border-forest-soft mb-6">
+                <h3 className="font-serif text-xl mb-2 font-semibold">Thank you for reaching out!</h3>
+                <p>We have received your request and will contact you shortly to confirm your appointment.</p>
+                <button 
+                  onClick={() => setStatus('idle')}
+                  className="mt-4 text-forest-primary font-medium hover:underline"
+                >
+                  Book another appointment
+                </button>
               </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {status === 'error' && (
+                  <div className="bg-red-50 text-red-700 p-4 rounded-xl text-sm border border-red-200">
+                    {errorMessage}
+                  </div>
+                )}
+                
+                <div>
+                  <label htmlFor="name" className="block text-sm font-semibold mb-2 text-forest-primary">Name</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    className="w-full px-4 py-3 rounded-xl border border-forest-primary/20 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"
+                    placeholder="Your full name"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="phone" className="block text-sm font-semibold mb-2 text-forest-primary">Phone <span className="text-red-500">*</span></label>
-                <input 
-                  type="tel" 
-                  id="phone" 
-                  name="phone" 
-                  required
-                  className="w-full px-4 py-3 rounded-xl border border-forest-primary/20 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"
-                  placeholder="Your phone number"
-                />
-              </div>
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-semibold mb-2 text-forest-primary">Phone <span className="text-red-500">*</span></label>
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    required
+                    className="w-full px-4 py-3 rounded-xl border border-forest-primary/20 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"
+                    placeholder="Your phone number"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="email" className="block text-sm font-semibold mb-2 text-forest-primary">Email</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  name="email" 
-                  className="w-full px-4 py-3 rounded-xl border border-forest-primary/20 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"
-                  placeholder="Your email address"
-                />
-              </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-semibold mb-2 text-forest-primary">Email</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    className="w-full px-4 py-3 rounded-xl border border-forest-primary/20 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"
+                    placeholder="Your email address"
+                  />
+                </div>
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-semibold mb-2 text-forest-primary">Message</label>
-                <textarea 
-                  id="message" 
-                  name="message" 
-                  rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-forest-primary/20 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all resize-none"
-                  placeholder="How can we help you?"
-                ></textarea>
-              </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-semibold mb-2 text-forest-primary">Message</label>
+                  <textarea 
+                    id="message" 
+                    name="message" 
+                    rows={4}
+                    className="w-full px-4 py-3 rounded-xl border border-forest-primary/20 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all resize-none"
+                    placeholder="How can we help you?"
+                  ></textarea>
+                </div>
 
-              <Button type="submit" variant="primary" className="w-full py-4 text-lg mt-4">
-                Submit Request
-              </Button>
-            </form>
+                <Button 
+                  type="submit" 
+                  variant="primary" 
+                  className={`w-full py-4 text-lg mt-4 ${status === 'submitting' ? 'opacity-70 cursor-not-allowed' : ''}`}
+                  disabled={status === 'submitting'}
+                >
+                  {status === 'submitting' ? 'Submitting...' : 'Submit Request'}
+                </Button>
+              </form>
+            )}
           </div>
 
           {/* Right Column: Google Map */}

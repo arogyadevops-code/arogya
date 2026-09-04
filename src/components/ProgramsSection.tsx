@@ -37,7 +37,7 @@ export function ProgramsSection() {
       
       {/* Background Decorator */}
       <div className="absolute top-[30%] -right-20 w-[400px] h-[400px] z-0 pointer-events-none opacity-20 mix-blend-multiply origin-right">
-        <Image src="/branch_right.jpg" alt="Botanical leaf right" fill className="object-contain" sizes="400px" quality={100} />
+        <Image src="/branch_right.jpg" alt="Botanical leaf right" fill className="object-contain" sizes="400px" quality={60} />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

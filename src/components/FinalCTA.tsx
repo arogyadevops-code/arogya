@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Button } from './ui/Button';
 
 export function FinalCTA() {
@@ -18,12 +19,16 @@ export function FinalCTA() {
         
         {/* Column 2 & 3: Buttons */}
         <div className="lg:w-1/2 flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-6 w-full">
-          <Button variant="primary" size="lg" className="bg-forest-dark text-white hover:bg-forest-primary w-full sm:w-auto shadow-md" withArrow>
-            Book Consultation
-          </Button>
-          <Button variant="outline" size="lg" className="border-forest-dark text-forest-dark hover:bg-forest-dark hover:text-white w-full sm:w-auto bg-transparent">
-            WhatsApp Us
-          </Button>
+          <Link href="/contact" className="w-full sm:w-auto">
+            <Button variant="primary" size="lg" className="bg-forest-dark text-white hover:bg-forest-primary w-full shadow-md" withArrow>
+              Book Consultation
+            </Button>
+          </Link>
+          <a href="https://wa.me/971545811966" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <Button variant="outline" size="lg" className="border-forest-dark text-forest-dark hover:bg-forest-dark hover:text-white w-full bg-transparent">
+              WhatsApp Us
+            </Button>
+          </a>
         </div>
         
       </div>
