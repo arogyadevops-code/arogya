@@ -11,21 +11,21 @@ const ABOUT_TABS = [
     title: 'Our Mission',
     heading: 'Empowering Health & Happiness',
     content: "To empower individuals and families to live healthier, happier lives through authentic Ayurvedic healthcare, personalized treatment plans, and natural solutions that address the root cause of illnesses rather than just the symptoms.",
-    image: "/images/ayurveda_intro_mission.jpg"
+    image: "/images/ayurveda_intro_mission.webp"
   },
   {
     id: 'vision',
     title: 'Our Vision',
     heading: 'The Most Trusted Care in the UAE',
     content: "To become one of the most trusted Ayurveda healthcare centers in the UAE by delivering genuine care, promoting preventive healthcare, and inspiring communities to adopt healthier lifestyles.",
-    image: "/images/ayurveda_intro_vision.jpg"
+    image: "/images/ayurveda_intro_vision.webp"
   },
   {
     id: 'values',
     title: 'Our Values',
     heading: 'Nurturing Body, Mind & Spirit',
     content: "Empathy, respect, dedication, honesty, transparency, and professionalism, with a commitment to treating the root cause while nurturing the body, mind, and spirit.",
-    image: "/images/ayurveda_intro_values.jpg"
+    image: "/images/ayurveda_intro_values.webp"
   }
 ];
 

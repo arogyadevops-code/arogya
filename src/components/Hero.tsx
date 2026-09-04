@@ -11,7 +11,7 @@ export function Hero() {
       {/* Desktop Full-Bleed Background Image */}
       <div className="hidden lg:block absolute inset-0 z-0">
         <Image 
-          src="/hero_desktop.png"
+          src="/hero_desktop.webp"
           alt="Premium Ayurvedic Wellness"
           fill
           className="object-cover object-right"
@@ -25,7 +25,7 @@ export function Hero() {
       {/* Mobile background image */}
       <div className="block lg:hidden absolute inset-0 z-0">
         <Image 
-          src="/images/hero-mobile.png"
+          src="/images/hero-mobile.webp"
           alt="Premium Ayurvedic Wellness"
           fill
           className="object-cover object-center"

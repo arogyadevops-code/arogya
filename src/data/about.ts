@@ -10,7 +10,7 @@ export const aboutData = {
       "We combine authentic Kerala Ayurveda with modern clinical practices, led by BAMS-qualified Ayurvedic doctors.",
       "Whether you seek relief from chronic pain, stress management, or a complete lifestyle reset, our therapies are designed to heal you naturally from the root."
     ],
-    image: "/about_who_we_are.jpg"
+    image: "/about_who_we_are.webp"
   },
   approach: {
     heading: "Traditional wisdom. Modern clinical care.",

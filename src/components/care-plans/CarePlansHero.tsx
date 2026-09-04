@@ -10,7 +10,7 @@ export function CarePlansHero() {
       {/* Background Image with Parallax & Blur */}
       <div className="absolute inset-0 z-0 h-[120%] -top-[10%]">
         <Image 
-          src="/images/care_plans_hero_bg.jpg"
+          src="/images/care_plans_hero_bg.webp"
           alt="Ayurvedic Wellness Consultation Room"
           fill
           className="object-cover"

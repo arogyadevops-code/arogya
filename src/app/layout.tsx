@@ -33,17 +33,17 @@ export default function RootLayout({
         <div className="fixed inset-0 z-[-1] pointer-events-none overflow-hidden">
           {/* subtle overall texture */}
           <div className="absolute inset-0 opacity-[0.02] mix-blend-multiply">
-            <img src="/ayurvedic_bg.jpg" alt="Background texture" className="w-full h-full object-cover object-center" />
+            <img src="/ayurvedic_bg.webp" alt="Background texture" className="w-full h-full object-cover object-center" />
           </div>
           
           {/* Left Branch */}
           <div className="absolute -top-[5%] -left-20 lg:-left-32 w-[300px] lg:w-[600px] h-[400px] lg:h-[800px] opacity-[0.35] mix-blend-multiply origin-left">
-            <img src="/branch_left.jpg" alt="Botanical leaf left" className="w-full h-full object-contain object-left-top" />
+            <img src="/branch_left.webp" alt="Botanical leaf left" className="w-full h-full object-contain object-left-top" />
           </div>
           
           {/* Right Branch */}
           <div className="absolute top-[30%] -right-20 lg:-right-32 w-[300px] lg:w-[600px] h-[400px] lg:h-[800px] opacity-[0.35] mix-blend-multiply origin-right">
-            <img src="/branch_right.jpg" alt="Botanical leaf right" className="w-full h-full object-contain object-right-top" />
+            <img src="/branch_right.webp" alt="Botanical leaf right" className="w-full h-full object-contain object-right-top" />
           </div>
         </div>
         

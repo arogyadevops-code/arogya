@@ -19,7 +19,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 cursor-pointer relative w-48 h-12 lg:w-64 lg:h-14">
             <Image 
-              src="/images/logonav.png"
+              src="/images/logonav.webp"
               alt="Arogya Ayurveda Logo"
               fill
               className="object-contain object-left"

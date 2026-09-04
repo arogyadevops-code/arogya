@@ -53,7 +53,7 @@ export function OurApproach() {
           >
             <div className="relative h-[400px] lg:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
               <Image 
-                src="/images/our_approach.jpg"
+                src="/images/our_approach.webp"
                 alt="Ayurvedic Treatment Approach"
                 fill
                 className="object-cover"

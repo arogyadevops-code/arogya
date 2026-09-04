@@ -49,7 +49,7 @@ export function AboutHero() {
           >
             <motion.div style={{ y: yBackground, height: "120%" }} className="absolute -top-[10%] -bottom-[10%] w-full">
               <Image 
-                src="/about_hero_ayurveda.jpg"
+                src="/about_hero_ayurveda.webp"
                 alt="Authentic Kerala Ayurvedic Treatment Environment"
                 fill
                 className="object-cover"

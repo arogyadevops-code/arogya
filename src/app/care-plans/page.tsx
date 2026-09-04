@@ -13,7 +13,7 @@ export default function CarePlansPage() {
     <main 
       className="flex min-h-screen flex-col w-full overflow-x-hidden pt-20 lg:pt-0 relative"
       style={{
-        backgroundImage: "url('/care_plan_bg.png')",
+        backgroundImage: "url('/care_plan_bg.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed"

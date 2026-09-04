@@ -17,7 +17,7 @@ export function DoctorProfile() {
       
       {/* Decorative leaf background */}
       <div className="absolute top-[20%] -right-32 w-[600px] h-[600px] z-0 pointer-events-none opacity-10 mix-blend-multiply origin-right">
-        <Image src="/branch_right.jpg" alt="Botanical leaf right" fill className="object-contain" sizes="600px" quality={100} />
+        <Image src="/branch_right.webp" alt="Botanical leaf right" fill className="object-contain" sizes="600px" quality={100} />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -35,7 +35,7 @@ export function DoctorProfile() {
             {/* Elegant Image Container */}
             <div className="relative w-full max-w-[420px] aspect-[4/5] rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-3xl rounded-bl-3xl overflow-hidden shadow-2xl">
               <Image 
-                src="/doctor.jpg" 
+                src="/doctor.webp" 
                 alt="Dr. M. Parvathy Nithya Kalyani" 
                 fill 
                 className="object-cover object-top"

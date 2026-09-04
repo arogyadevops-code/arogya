@@ -15,13 +15,13 @@ export function Treatments() {
       
       {/* Realistic Botanical Decorations on sides */}
       <div className="absolute top-[5%] -right-32 w-[600px] h-[600px] z-0 pointer-events-none opacity-40 mix-blend-multiply origin-right">
-        <Image src="/branch_right.jpg" alt="Botanical leaf right" fill className="object-contain" sizes="600px" quality={60} />
+        <Image src="/branch_right.webp" alt="Botanical leaf right" fill className="object-contain" sizes="600px" quality={60} />
       </div>
       <div className="absolute top-[35%] -left-32 w-[600px] h-[600px] z-0 pointer-events-none opacity-40 mix-blend-multiply origin-left">
-        <Image src="/branch_left.jpg" alt="Botanical leaf left" fill className="object-contain" sizes="600px" quality={60} />
+        <Image src="/branch_left.webp" alt="Botanical leaf left" fill className="object-contain" sizes="600px" quality={60} />
       </div>
       <div className="absolute bottom-[10%] -right-16 w-[500px] h-[500px] z-0 pointer-events-none opacity-30 mix-blend-multiply rotate-45 origin-right">
-        <Image src="/branch_right.jpg" alt="Botanical leaf right bottom" fill className="object-contain" sizes="500px" quality={60} />
+        <Image src="/branch_right.webp" alt="Botanical leaf right bottom" fill className="object-contain" sizes="500px" quality={60} />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

@@ -2,16 +2,16 @@
 import React from 'react';
 
 const partners = [
-  { name: "AXA", logo: "/images/partners/axa.png" },
-  { name: "Neuron", logo: "/images/partners/neuron.png" },
-  { name: "SAICO Insurance", logo: "/images/partners/saico.png" },
-  { name: "ADNIC", logo: "/images/partners/adnic.png" },
-  { name: "Cigna", logo: "/images/partners/cigna.png" },
-  { name: "Daman", logo: "/images/partners/daman.png" },
-  { name: "FMC", logo: "/images/partners/fmc.png" },
-  { name: "Mednet", logo: "/images/partners/mednet.jpg" },
-  { name: "MSH", logo: "/images/partners/msh.png" },
-  { name: "NAS", logo: "/images/partners/nas.jpg" }
+  { name: "AXA", logo: "/images/partners/axa.webp" },
+  { name: "Neuron", logo: "/images/partners/neuron.webp" },
+  { name: "SAICO Insurance", logo: "/images/partners/saico.webp" },
+  { name: "ADNIC", logo: "/images/partners/adnic.webp" },
+  { name: "Cigna", logo: "/images/partners/cigna.webp" },
+  { name: "Daman", logo: "/images/partners/daman.webp" },
+  { name: "FMC", logo: "/images/partners/fmc.webp" },
+  { name: "Mednet", logo: "/images/partners/mednet.webp" },
+  { name: "MSH", logo: "/images/partners/msh.webp" },
+  { name: "NAS", logo: "/images/partners/nas.webp" }
 ];
 
 export function PartnersSection() {

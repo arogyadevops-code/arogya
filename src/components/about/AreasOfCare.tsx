@@ -6,13 +6,13 @@ import { motion, useInView } from 'framer-motion';
 import { aboutData } from '@/data/about';
 
 const IMAGES = [
-  "/images/area_panchakarma.jpg",
-  "/images/area_rejuvenation.jpg",
-  "/images/area_pain_management.jpg",
-  "/images/area_stress_relief.jpg",
-  "/images/area_womens_wellness.jpg",
-  "/images/area_lifestyle.jpg",
-  "/images/area_preventive.jpg",
+  "/images/area_panchakarma.webp",
+  "/images/area_rejuvenation.webp",
+  "/images/area_pain_management.webp",
+  "/images/area_stress_relief.webp",
+  "/images/area_womens_wellness.webp",
+  "/images/area_lifestyle.webp",
+  "/images/area_preventive.webp",
 ];
 
 export function AreasOfCare() {

@@ -34,7 +34,7 @@ export function ArogyaExperience() {
           <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-forest-dark order-2 lg:order-1 relative shadow-2xl">
             <div className="absolute inset-0 bg-black/10 z-10" />
             <Image 
-              src="/images/arogya-experience.jpg"
+              src="/images/arogya-experience.webp"
               alt="Arogya Ayurvedic Experience Room"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700"

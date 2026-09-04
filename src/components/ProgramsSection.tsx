@@ -15,13 +15,13 @@ const programs = [
     id: "hair-growth",
     title: "Hair Growth",
     description: "Nourishment and therapies that support stronger, healthier hair.",
-    image: "/ayurveda_hair_oil.jpg"
+    image: "/ayurveda_hair_oil.webp"
   },
   {
     id: "skin-glowing",
     title: "Skin Glowing",
     description: "Natural care for clear, radiant and healthy looking skin.",
-    image: "/ayurveda_skincare.jpg"
+    image: "/ayurveda_skincare.webp"
   },
   {
     id: "back-pain",
@@ -37,7 +37,7 @@ export function ProgramsSection() {
       
       {/* Background Decorator */}
       <div className="absolute top-[30%] -right-20 w-[400px] h-[400px] z-0 pointer-events-none opacity-20 mix-blend-multiply origin-right">
-        <Image src="/branch_right.jpg" alt="Botanical leaf right" fill className="object-contain" sizes="400px" quality={60} />
+        <Image src="/branch_right.webp" alt="Botanical leaf right" fill className="object-contain" sizes="400px" quality={60} />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

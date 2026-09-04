@@ -10,49 +10,49 @@ export const carePlans: CarePlan[] = [
     id: "relax-rejuvenate",
     title: "Relax & Rejuvenate Program",
     description: "A calming, full-body reset combining classical Abhyangam, steam and therapeutic massage to release tension and restore energy.",
-    image: "/images/care-plans/cp_relax.jpg"
+    image: "/images/care-plans/cp_relax.webp"
   },
   {
     id: "sports-recovery",
     title: "Sports Recovery & Rehabilitation",
     description: "Targeted therapies for athletes and active individuals to speed recovery from strain, injury and joint overuse.",
-    image: "/images/care-plans/cp_sports.jpg"
+    image: "/images/care-plans/cp_sports.webp"
   },
   {
     id: "natural-beauty",
     title: "Natural Beauty & Skin Rejuvenation",
     description: "Herbal facials, Mukha Lepam and cleansing therapies for natural radiance from within, free of synthetic products.",
-    image: "/images/care-plans/cp_beauty.jpg"
+    image: "/images/care-plans/cp_beauty.webp"
   },
   {
     id: "spine-health",
     title: "Spine Health & Posture Care",
     description: "Kati and Greeva Vasti-led therapies to relieve spinal stiffness and correct long-term postural imbalance.",
-    image: "/images/care-plans/cp_spine.jpg"
+    image: "/images/care-plans/cp_spine.webp"
   },
   {
     id: "stroke-recovery",
     title: "Stroke Recovery & Neuro Rehabilitation",
     description: "Structured Ayurvedic rehabilitation to support motor function, circulation and recovery after a neurological event.",
-    image: "/images/care-plans/cp_stroke.jpg"
+    image: "/images/care-plans/cp_stroke.webp"
   },
   {
     id: "migraine-relief",
     title: "Migraine Relief Program",
     description: "Shirodhara and Nasyam-based protocols to calm the nervous system and reduce migraine frequency and intensity.",
-    image: "/images/care-plans/cp_migraine.jpg"
+    image: "/images/care-plans/cp_migraine.webp"
   },
   {
     id: "comprehensive-pain",
     title: "Comprehensive Pain Relief Program",
     description: "Multi-modal approach combining herbal poultices and specialized massages for chronic joint and muscle pain.",
-    image: "/images/care-plans/cp_pain.jpg"
+    image: "/images/care-plans/cp_pain.webp"
   },
   {
     id: "lifestyle-disease",
     title: "Lifestyle Disease Management",
     description: "Holistic interventions through diet, yoga, and natural therapies to manage conditions like diabetes and hypertension.",
-    image: "/images/care-plans/cp_lifestyle.jpg"
+    image: "/images/care-plans/cp_lifestyle.webp"
   },
   {
     id: "digestive-wellness",

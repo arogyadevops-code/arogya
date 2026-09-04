@@ -17,7 +17,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <a href="/" className="block mb-6 relative w-64 h-24 overflow-hidden hover:opacity-80 transition-opacity">
               <Image 
-                src="/images/footer-logo.png"
+                src="/images/footer-logo.webp"
                 alt="Arogya Ayurveda Logo"
                 fill
                 className="object-contain object-left brightness-0 invert"

@@ -19,7 +19,7 @@ export function TreatmentsHero() {
       {/* Background Image with Parallax */}
       <motion.div style={{ y: yBackground, height: "120%" }} className="absolute -top-[10%] -bottom-[10%] w-full">
         <Image 
-          src="/images/treatments_hero_bg.jpg"
+          src="/images/treatments_hero_bg.webp"
           alt="Premium Ayurvedic Spa Room at Arogya"
           fill
           className="object-cover"
