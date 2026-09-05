@@ -14,6 +14,8 @@ export default function ContactPage() {
     const formData = new FormData(e.currentTarget);
     const name = formData.get('name') as string;
     const phone = formData.get('phone') as string;
+    const email = formData.get('email') as string;
+    const message = formData.get('message') as string;
     
     // Basic validation
     if (!phone || phone.length < 8) {
@@ -22,11 +24,14 @@ export default function ContactPage() {
       return;
     }
 
-    // Mock API call
-    setTimeout(() => {
-      setStatus('success');
-      (e.target as HTMLFormElement).reset();
-    }, 1500);
+    const whatsappMessage = `Hello Arogya Ayurveda, I would like to book an appointment.\n\nName: ${name || 'N/A'}\nPhone: ${phone}\nEmail: ${email || 'N/A'}\nMessage: ${message || 'N/A'}`;
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappUrl = `https://wa.me/971545811966?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+    
+    setStatus('success');
+    (e.target as HTMLFormElement).reset();
   };
 
   return (

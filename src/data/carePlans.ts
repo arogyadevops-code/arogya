@@ -82,7 +82,7 @@ export const carePlans: CarePlan[] = [
     id: "womens-40",
     title: "Women's 40+ Wellness Program",
     description: "Specialized therapies supporting hormonal balance, bone density, and emotional well-being during perimenopause and beyond.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop"
+    image: "/images/care-plans/cp_womens_40.webp"
   },
   {
     id: "pregnancy-mother-care",

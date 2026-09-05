@@ -41,10 +41,6 @@ export default function RootLayout({
             <img src="/branch_left.webp" alt="Botanical leaf left" className="w-full h-full object-contain object-left-top" />
           </div>
           
-          {/* Right Branch */}
-          <div className="absolute top-[30%] -right-20 lg:-right-32 w-[300px] lg:w-[600px] h-[400px] lg:h-[800px] opacity-[0.35] mix-blend-multiply origin-right">
-            <img src="/branch_right.webp" alt="Botanical leaf right" className="w-full h-full object-contain object-right-top" />
-          </div>
         </div>
         
         <Navbar />
