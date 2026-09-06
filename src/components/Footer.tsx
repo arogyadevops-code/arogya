@@ -80,7 +80,7 @@ export function Footer() {
             </h4>
             <div className="flex gap-4 flex-wrap">
               {/* Instagram */}
-              <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full border border-ivory/40 flex items-center justify-center hover:bg-forest-dark hover:text-ivory hover:border-forest-dark transition-all duration-300">
+              <a href="https://www.instagram.com/arogyaayurveda.ae/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full border border-ivory/40 flex items-center justify-center hover:bg-forest-dark hover:text-ivory hover:border-forest-dark transition-all duration-300">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -88,9 +88,15 @@ export function Footer() {
                 </svg>
               </a>
               {/* Facebook */}
-              <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full border border-ivory/40 flex items-center justify-center hover:bg-forest-dark hover:text-ivory hover:border-forest-dark transition-all duration-300">
+              <a href="https://www.facebook.com/arogyaayurveda.ae" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full border border-ivory/40 flex items-center justify-center hover:bg-forest-dark hover:text-ivory hover:border-forest-dark transition-all duration-300">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              {/* TikTok */}
+              <a href="https://tr.ee/FIpO5doS4E" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="w-10 h-10 rounded-full border border-ivory/40 flex items-center justify-center hover:bg-forest-dark hover:text-ivory hover:border-forest-dark transition-all duration-300">
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.12-3.44-3.17-3.8-5.46-.4-2.51.3-5.18 2.11-6.91 1.77-1.74 4.31-2.52 6.71-2.15V12.7c-1.31-.17-2.67.14-3.73.91-.91.64-1.52 1.63-1.66 2.72-.12 1.05.28 2.13 1.01 2.87.69.75 1.71 1.15 2.74 1.14 1.25-.01 2.44-.55 3.23-1.46.69-.79 1.05-1.84 1.05-2.92V.02h-.03z" />
                 </svg>
               </a>
               {/* Phone */}

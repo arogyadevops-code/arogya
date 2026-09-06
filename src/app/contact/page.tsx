@@ -117,6 +117,19 @@ export default function ContactPage() {
                   ></textarea>
                 </div>
 
+                <div className="flex items-center space-x-3 mb-2">
+                  <input 
+                    type="checkbox" 
+                    id="human" 
+                    name="human" 
+                    required 
+                    className="w-5 h-5 text-forest-primary rounded border-forest-primary/20 focus:ring-forest-primary cursor-pointer"
+                  />
+                  <label htmlFor="human" className="text-sm font-medium text-forest-primary cursor-pointer select-none">
+                    I am not a robot <span className="text-red-500">*</span>
+                  </label>
+                </div>
+
                 <Button 
                   type="submit" 
                   variant="primary" 
@@ -129,27 +142,35 @@ export default function ContactPage() {
             )}
           </div>
 
-          {/* Right Column: Google Map */}
-          <div className="h-[500px] lg:h-auto rounded-3xl overflow-hidden shadow-xl border border-forest-primary/5 bg-white flex flex-col relative">
-             <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-6 py-4 rounded-xl shadow-lg z-10 w-[90%] md:w-auto">
-               <h3 className="font-serif text-xl text-forest-primary font-semibold mb-1">Arogya Ayurveda</h3>
-               <p className="text-text-muted text-sm leading-relaxed">
-                 Mohamed Bin Zayed City<br/>
-                 Abu Dhabi, United Arab Emirates
-               </p>
+          {/* Right Column: Location Details */}
+          <div className="rounded-3xl overflow-hidden shadow-xl border border-forest-primary/5 bg-cream flex flex-col items-center justify-center p-8 lg:p-12 h-full min-h-[400px] relative">
+             {/* Decorative background element */}
+             <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
+               <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-forest-primary">
+                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                 <circle cx="12" cy="10" r="3"></circle>
+               </svg>
              </div>
              
-             {/* Note: Embedding via maps.google.com/maps?q=lat,lng&output=embed is standard for no API key map embeds. */}
-             <iframe
-               title="Google Maps Location"
-               src="https://maps.google.com/maps?q=24.3477563,54.5534295&hl=en&z=13&output=embed"
-               width="100%"
-               height="100%"
-               style={{ border: 0, minHeight: '500px' }}
-               allowFullScreen={true}
-               loading="lazy"
-               referrerPolicy="no-referrer-when-downgrade"
-             ></iframe>
+             <div className="bg-white/95 backdrop-blur-md px-8 py-8 rounded-2xl shadow-xl z-10 w-full max-w-sm border border-forest-primary/10 text-center">
+               <h3 className="font-serif text-2xl text-forest-dark font-semibold mb-3">Arogya Ayurveda<br/>Health Care</h3>
+               <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                 Ji'dan St - Mohamed Bin Zayed City<br/>
+                 Abu Dhabi, United Arab Emirates
+               </p>
+               <a 
+                 href="https://www.google.com/maps/place/?q=place_id:ChIJcU3VnUpHXj4RmrLrNOoLZ_k" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="flex items-center justify-center w-full bg-forest-primary hover:bg-forest-dark text-white py-3 rounded-xl font-medium transition-colors shadow-md"
+               >
+                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                 </svg>
+                 Get Directions
+               </a>
+             </div>
           </div>
 
         </div>
