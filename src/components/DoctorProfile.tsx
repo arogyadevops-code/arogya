@@ -35,8 +35,8 @@ export function DoctorProfile() {
             {/* Elegant Image Container */}
             <div className="relative w-full max-w-[420px] aspect-[4/5] rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-3xl rounded-bl-3xl overflow-hidden shadow-2xl">
               <Image 
-                src="/doctor.webp" 
-                alt="Dr. M. Parvathy Nithya Kalyani" 
+                src="/doctor-salwa.webp" 
+                alt="Dr. Salwa Sanajil" 
                 fill 
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -57,7 +57,7 @@ export function DoctorProfile() {
             className="flex flex-col text-center lg:text-left"
           >
             <h2 className="text-4xl md:text-5xl lg:text-5xl font-serif text-forest-dark mb-4">
-              Dr. M. Parvathy Nithya Kalyani
+              Dr. Salwa Sanajil
             </h2>
             
             <p className="text-gold tracking-[0.2em] uppercase text-xs md:text-sm font-semibold mb-8">

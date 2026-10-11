@@ -6,7 +6,7 @@ import { Treatments } from '@/components/Treatments';
 import { WhyArogya } from '@/components/about/WhyArogya';
 import { ProgramsSection } from '@/components/ProgramsSection';
 import { DoctorProfile } from '@/components/DoctorProfile';
-import { PartnersSection } from '@/components/PartnersSection';
+import { InsuranceSection } from '@/components/InsuranceSection';
 import { FinalCTA } from '@/components/FinalCTA';
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <WhyArogya />
       <ProgramsSection />
       <DoctorProfile />
-      <PartnersSection />
+      <InsuranceSection />
       <FinalCTA />
     </main>
   );
