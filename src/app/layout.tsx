@@ -19,6 +19,18 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Arogya Ayurveda | Ayurvedic Wellness in Abu Dhabi",
   description: "A modern Ayurvedic wellness experience in Abu Dhabi, rooted in traditional healing principles and personalized for your wellbeing.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
